@@ -1,0 +1,71 @@
+
+
+// igneous oil
+@1000 = ~Igneous Oil~
+@1001 = ~This oil will make your weapons inflict fire damage when coated with it. Since it is a natural substance, it won't be stopped by Magic Resistance.
+
+STATISTICS:
+
+Damage: 1d2+1 fire damage (Save vs. Breath for half)
+Duration: 1 turn
+
+Weight: 1~
+
+// caustic oil
+@1002 = ~Caustic Oil~
+@1003 = ~This acidic oil will make your weapons inflict acid damage when coated with it. Since it is a natural substance, it won't be stopped by Magic Resistance.
+
+STATISTICS:
+
+Damage: 1d2+1 acid damage (Save vs. Breath for half)
+Duration: 1 turn
+
+Weight: 1~
+
+// gelid oil
+@1004 = ~Gelid Oil~
+@1005 = ~This super-cooled oil will make your weapons inflict cold damage when coated with it. Since it is a natural substance, it won't be stopped by Magic Resistance.
+
+STATISTICS:
+
+Damage: 1d2+1 cold damage (Save vs. Breath for half)
+Duration: 1 turn
+
+Weight: 1~
+
+// scintillating oil
+@1006 = ~Scintillating Oil~
+@1007 = ~This electrically charged oil will make your weapons inflict electric damage when coated with it. Since it is a natural substance, it won't be stopped by Magic Resistance.
+
+STATISTICS:
+
+Damage: 1d2+1 electric damage (Save vs. Breath for half)
+Duration: 1 turn
+
+Weight: 1~
+
+// arcane oil
+@1008 = ~Arcane Oil~
+@1009 = ~This oil is charged with magical energy and will make your weapons inflict magic damage when coated with it. Since it is a magical substance, it may be stopped by Magic Resistance.
+
+STATISTICS:
+
+Damage: 1d4+2 magic damage
+Duration: 1 turn
+
+Weight: 1~
+
+// poisonous oil
+@1010 = ~Noxious Oil~
+@1011 = ~This noxious oil will make your weapons inflict poison damage when coated with it, and may indeed poison the target if they can't resist it. Dealing with poisons is a delicate task, only those of remarkable dexterity can use it without risking poisoning themselves.
+
+Since it is a natural substance, it won't be stopped by Magic Resistance.
+
+STATISTICS:
+
+Damage: 1d2+1 poison damage
+Poisoning: Save vs. Death at +2 or suffer 6 points of poison damage over 2 rounds
+Self-damage: User suffers the same effect if their Dexterity is below 17
+Duration: 1 turn
+
+Weight: 1~
