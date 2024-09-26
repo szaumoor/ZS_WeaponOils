@@ -1,6 +1,6 @@
 # ZS_WeaponOils
 
-This small mod simply adds a new class of items called "weapon oils". Essentially, they are consumable potions that apply a somewhat mild melee/ranged effect to your weapons. They are only distributed to stores so far. Compatibility with IWDEE not established yet, because I can't be bothered what stores there are and how to decide which stores make the most sense to place the items in. Feel free to offer feedback on this.
+This small mod simply adds a new class of items called "weapon oils". Essentially, they are consumable potions that apply a somewhat mild melee/ranged effect to your weapons. They are only distributed to stores so far. Compatibility with IWDEE not established yet, because I can't be bothered to check what stores there are and how to decide which stores make the most sense to place the items in. Feel free to offer feedback on this.
 
 I'm not a good writer, so the descriptions are pretty boring, and the icons were lazily made, but I think they're visually  distinguishable enough.
 
@@ -88,7 +88,7 @@ Weight: 1
 Should be compatible with everything as far as I know. Please offer feedback on balance and the supply of oils throughout the game if you try this.
 
 ## Known issues
-The noxious oil somehow seems to not offer log feedback indicating whether the poisoning was resisted or not. I don't think it affects functionality though.
+The noxious oil sometimes seems to not offer log feedback indicating whether the poisoning was resisted or not. I don't think it affects functionality though.
 
 ## Future improvements
 - Maybe extra oils like "blessed water oil" (yes, I know that makes no sense), "drow poisonous oil", etc.

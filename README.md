@@ -88,7 +88,7 @@ Weight: 1
 Should be compatible with everything as far as I know. Please offer feedback on balance and the supply of oils throughout the game if you try this.
 
 ## Known issues
-The noxious oil somehow seems to not offer log feedback indicating whether the poisoning was resisted or not. I don't think it affects functionality though.
+The noxious oil sometimes seems to not offer log feedback indicating whether the poisoning was resisted or not. I don't think it affects functionality though.
 
 ## Future improvements
 - Maybe extra oils like "blessed water oil" (yes, I know that makes no sense), "drow poisonous oil", etc.
