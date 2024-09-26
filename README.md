@@ -2,14 +2,14 @@
 
 This small mod simply adds a new class of items called "weapon oils". Essentially, they are consumable potions that apply a somewhat mild melee/ranged effect to your weapons. They are only distributed to stores so far. Compatibility with IWDEE not established yet, because I can't be bothered what stores there are and how to decide which stores make the most sense to place the items in. Feel free to offer feedback on this.
 
-I'm not a good writer, so the description are pretty boring, and the icons were lazily made, but I think they're visibly distinguishable enough.
+I'm not a good writer, so the descriptions are pretty boring, and the icons were lazily made, but I think they're visually  distinguishable enough.
 
-Theese are the list of available oils:
+These are the list of available oils:
 
 ### Igneous Oil
 Base price: 500 gp
 
-This oil will make your weapons inflict fire damage when coated with thitem. Since it is a natural substance, it won't be stopped by Magic Resistance.
+This oil will make your weapons inflict fire damage when coated with it. Since it is a natural substance, it won't be stopped by Magic Resistance.
 
 STATISTICS:
 
