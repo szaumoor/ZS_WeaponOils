@@ -9,14 +9,14 @@ Theese are the list of available oils:
 ### Igneous Oil
 Base price: 500 gp
 
-This oil will make your weapons inflict fire damage when coated with thitem. Since it is a natural substance, it won't be stopped by Magic Resistance.
+<p>This oil will make your weapons inflict fire damage when coated with thitem. Since it is a natural substance, it won't be stopped by Magic Resistance.
 
 STATISTICS:
 
 Damage: 1d2+1 fire damage (Save vs. Breath for half)
 Duration: 1 turn
 
-Weight: 1
+Weight: 1 </p>
 
 ### Caustic Oil
 Base price: 500 gp
