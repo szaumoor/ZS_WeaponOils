@@ -5,8 +5,8 @@ README ~ZS_WeaponOils/README.md~
 AUTO_EVAL_STRINGS
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 ALWAYS
-    INCLUDE ~ZS_WeaponOils/libs/zs_alter_functions.tpa~
-    INCLUDE ~ZS_WeaponOils/libs/zs_checks.tpa~
+    INCLUDE ~%MOD_FOLDER%/libs/zs_alter_functions.tpa~
+    INCLUDE ~%MOD_FOLDER%/libs/zs_checks.tpa~
 END
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 LANGUAGE
@@ -15,52 +15,91 @@ LANGUAGE
 "ZS_WeaponOils/lang/english/setup.tra"
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-BEGIN "Install oils and insert them into the world" DESIGNATED 100
-REQUIRE_PREDICATE GAME_IS "bgee bg2ee eet" "Only available for BGEE/BG2EE/EET"
+BEGIN @100 DESIGNATED 100
+REQUIRE_PREDICATE GAME_IS "bgee bg2ee eet" @500
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
-COPY ~ZS_WeaponOils/oils/igneous_oil~ ~override~
-COPY_EXISTING ~ZSWOFR01.ITM~ ~override~
-    LPF ALTER_ITEM INT_VAR id_ref_name = RESOLVE_STR_REF(@1000) id_ref_desc = RESOLVE_STR_REF(@1001) END
-BUT_ONLY
+COPY ~%MOD_FOLDER%/oils/igneous_oil~ ~override~
+    COPY_EXISTING ~ZSWOFR01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1000) id_ref_desc=RESOLVE_STR_REF(@1001) END
 
-COPY ~ZS_WeaponOils/oils/caustic_oil~ ~override~
-COPY_EXISTING ~ZSWOAC01.ITM~ ~override~
-    LPF ALTER_ITEM INT_VAR id_ref_name = RESOLVE_STR_REF(@1002) id_ref_desc = RESOLVE_STR_REF(@1003) END
-BUT_ONLY
+COPY ~%MOD_FOLDER%/oils/caustic_oil~ ~override~
+    COPY_EXISTING ~ZSWOAC01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1002) id_ref_desc=RESOLVE_STR_REF(@1003) END
 
-COPY ~ZS_WeaponOils/oils/gelid_oil~ ~override~
-COPY_EXISTING ~ZSWOCD01.ITM~ ~override~
-    LPF ALTER_ITEM INT_VAR id_ref_name = RESOLVE_STR_REF(@1004) id_ref_desc = RESOLVE_STR_REF(@1005) END
-BUT_ONLY
+COPY ~%MOD_FOLDER%/oils/gelid_oil~ ~override~
+    COPY_EXISTING ~ZSWOCD01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1004) id_ref_desc=RESOLVE_STR_REF(@1005) END
 
-COPY ~ZS_WeaponOils/oils/scintillating_oil~ ~override~
-COPY_EXISTING ~ZSWOEL01.ITM~ ~override~
-    LPF ALTER_ITEM INT_VAR id_ref_name = RESOLVE_STR_REF(@1006) id_ref_desc = RESOLVE_STR_REF(@1007) END
-BUT_ONLY
+COPY ~%MOD_FOLDER%/oils/scintillating_oil~ ~override~
+    COPY_EXISTING ~ZSWOEL01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1006) id_ref_desc=RESOLVE_STR_REF(@1007) END
 
-COPY ~ZS_WeaponOils/oils/arcane_oil~ ~override~
-COPY_EXISTING ~ZSWOMD01.ITM~ ~override~
-    LPF ALTER_ITEM INT_VAR id_ref_name = RESOLVE_STR_REF(@1008) id_ref_desc = RESOLVE_STR_REF(@1009) END
-BUT_ONLY
+COPY ~%MOD_FOLDER%/oils/arcane_oil~ ~override~
+    COPY_EXISTING ~ZSWOMD01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1008) id_ref_desc=RESOLVE_STR_REF(@1009) END
 
-COPY ~ZS_WeaponOils/oils/poisonous_oil~ ~override~
-COPY_EXISTING ~ZSWOPS01.ITM~ ~override~
-    LPF ALTER_ITEM INT_VAR id_ref_name = RESOLVE_STR_REF(@1010) id_ref_desc = RESOLVE_STR_REF(@1011) END
-BUT_ONLY
+COPY ~%MOD_FOLDER%/oils/noxious_oil~ ~override~
+    COPY_EXISTING ~ZSWOPS01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1010) id_ref_desc=RESOLVE_STR_REF(@1011) END
+    COPY_EXISTING ~ZSWOPOSB.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1010) END
+
+COPY ~%MOD_FOLDER%/oils/soporific_oil~ ~override~
+    COPY_EXISTING ~ZSWOPS02.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1012) id_ref_desc=RESOLVE_STR_REF(@1013) END
+    COPY_EXISTING ~ZSWOPOSD.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1012) END
+
+COPY ~%MOD_FOLDER%/oils/sanctified_oil~ ~override~
+    COPY_EXISTING ~ZSWOHL01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1014) id_ref_desc=RESOLVE_STR_REF(@1015) END
+    COPY_EXISTING ~ZSWOPHLB.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1014) END
+
+COPY ~%MOD_FOLDER%/oils/profane_oil~ ~override~
+    COPY_EXISTING ~ZSWOUL01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1016) id_ref_desc=RESOLVE_STR_REF(@1017) END
+    COPY_EXISTING ~ZSWONHLB.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1016) END
+
+COPY ~%MOD_FOLDER%/oils/kuotoan_oil~ ~override~
+    COPY_EXISTING ~ZSWOPS05.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1018) id_ref_desc=RESOLVE_STR_REF(@1019) END
+    COPY_EXISTING ~ZSWOPOSK.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1018) END
+        PATCH_IF GAME_IS ~bgee~ BEGIN // PATCH stunned strref in BGEE
+            LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = 26050 END
+        END
+
+COPY ~%MOD_FOLDER%/oils/dragon_bile~ ~override~
+    COPY_EXISTING ~ZSWOPS03.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1020) id_ref_desc=RESOLVE_STR_REF(@1021) END
+    COPY_EXISTING ~ZSWOPOSF.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1020) END
+
+COPY ~%MOD_FOLDER%/oils/dragonsbane_oil~ ~override~
+    COPY_EXISTING ~ZSWOPS04.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1022) id_ref_desc=RESOLVE_STR_REF(@1023) END
+    COPY_EXISTING ~ZSWOPOSH.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1022) END
+    COPY_EXISTING ~ZSWOPOSI.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1022) END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~SHTHSTOR.STO~ BEGIN
     COPY_EXISTING ~SHTHSTOR.STO~ ~override~ //shadow thief fence RATELL
                   ~ROGER.STO~ ~override~  // roger the fence
                   ~JAYES.STO~ ~override~  // JAYES the fence
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 20 STR_VAR item_name = ~ZSWOPS01~ END // poisonous oil
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 8 STR_VAR item_name = ~ZSWOAC01~ END // CAUSTIC oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 8 STR_VAR item_name = ~ZSWOAC01~  END // CAUSTIC oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOPSO2~  END // drow soporific oil
     BUT_ONLY
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ARLED.STO~ BEGIN
     COPY_EXISTING ~ARLED.STO~ ~override~ //shadow thief fence arledrian
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 12 STR_VAR item_name = ~ZSWOPS01~ END // poisonous oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOPSO2~ END // drow soporific oil
     BUT_ONLY
 END
 
@@ -70,6 +109,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~UHMER01.STO~ BEGIN
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOCD01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOFR01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOAC01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 1 STR_VAR item_name = ~ZSWOPSO4~ END // Dragonsbane oil
     BUT_ONLY
 
     COPY_EXISTING ~UHMER02.STO~ ~override~ // MIN MINLING umar hills
@@ -99,34 +139,41 @@ ACTION_IF FILE_EXISTS_IN_GAME ~BHELM.STO~ BEGIN
     COPY_EXISTING ~BHELM.STO~ ~override~ //helm's temple
                   ~TEMHELM.STO~ ~override~
                   ~TEM4802.STO~ ~override~
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 20 STR_VAR item_name = ~ZSWOMD01~ END // magic damage oil 20 units
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 10 STR_VAR item_name = ~ZSWOMD01~ END // magic damage oil 10 units
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 10 STR_VAR item_name = ~ZSWOHL01~ END // sanctified oil
     BUT_ONLY
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ULGOTH.STO~ BEGIN
     COPY_EXISTING ~ULGOTH.STO~ ~override~ //helm's temple
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 7 STR_VAR item_name = ~ZSWOAC01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 9 STR_VAR item_name = ~ZSWOFR01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 4 STR_VAR item_name = ~ZSWOEL01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOCD01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOAC01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 7 STR_VAR item_name = ~ZSWOFR01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOEL01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOCD01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 8 STR_VAR item_name = ~ZSWOHL01~ END // sanctified oil
     BUT_ONLY
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~TEM3402.STO~ BEGIN
     COPY_EXISTING ~TEM3402.STO~ ~override~ //helm's temple
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOMD01~ END // magic damage oil 20 units
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOMD01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 4 STR_VAR item_name = ~ZSWOFR01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOHL01~ END // sanctified oil
     BUT_ONLY
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ERDANE.STO~ BEGIN
     COPY_EXISTING ~ERDANE.STO~ ~override~ //helm's temple
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 24 STR_VAR item_name = ~ZSWOPS01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 24 STR_VAR item_name = ~ZSWOPS01~ END // normal poison oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 4 STR_VAR item_name = ~ZSWOPS02~  END // drow soporific oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 1 STR_VAR item_name = ~ZSWOPS03~  END // dragon bile
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 12 STR_VAR item_name = ~ZSWOMD01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 12 STR_VAR item_name = ~ZSWOEL01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 12 STR_VAR item_name = ~ZSWOCD01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 12 STR_VAR item_name = ~ZSWOFR01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 12 STR_VAR item_name = ~ZSWOAC01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOHL01~  END // sanctified oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOUL01~  END // profane oil
     BUT_ONLY
 END
 
@@ -134,6 +181,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~DAWNMAS.STO~ BEGIN
     COPY_EXISTING ~DAWNMAS.STO~ ~override~ //DAWNMASTER's temple
                   ~TEMLATH.STO~ ~override~
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 20 STR_VAR item_name = ~ZSWOFR01~ END // fire damage oil 20 units
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 10 STR_VAR item_name = ~ZSWOHL01~ END // sanctified oil
     BUT_ONLY
 END
 
@@ -141,13 +189,16 @@ ACTION_IF FILE_EXISTS_IN_GAME ~TALMISS.STO~ BEGIN
     COPY_EXISTING ~TALMISS.STO~ ~override~ //TALOS's temple
                   ~TEMTALOS.STO~ ~override~
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 20 STR_VAR item_name = ~ZSWOEL01~ END // ELECTRICAL damage oil 20 units
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOPS01~ END // POISON damage oil 3 units
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOPS01~  END // POISON damage oil 3 units
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 1 STR_VAR item_name = ~ZSWOPS03~  END
     BUT_ONLY
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~TRRAK01.STO~ BEGIN
     COPY_EXISTING ~TRRAK01.STO~ ~override~ //THUMB
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOPS01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 1 STR_VAR item_name = ~ZSWOPS02~ END // POISON damage oil 3 units
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 1 STR_VAR item_name = ~ZSWOPS03~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOMD01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOEL01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOCD01~ END
@@ -158,7 +209,11 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~TRGENI01.STO~ BEGIN
     COPY_EXISTING ~TRGENI01.STO~ ~override~ //trademeet genie
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOPS01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOPS01~ END // poisonous oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOPS02~ END // drow soporific oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOPS03~ END// dragon bile
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 1 STR_VAR item_name = ~ZSWOPS04~ END // Dragonsbane oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 1 STR_VAR item_name = ~ZSWOPS05~ END // kuotoan oil
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOMD01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOEL01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOCD01~ END
@@ -174,6 +229,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~TEMSUP.STO~ BEGIN
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOCD01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOFR01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOAC01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 4 STR_VAR item_name = ~ZSWOHL01~ END
     BUT_ONLY
 END
 
@@ -181,18 +237,23 @@ ACTION_IF FILE_EXISTS_IN_GAME ~FRIEND.STO~ BEGIN
     COPY_EXISTING ~FRIEND.STO~ ~override~ // friendly arm inn
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOFR01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 1 STR_VAR item_name = ~ZSWOCD01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 1 STR_VAR item_name = ~ZSWOAC01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 1 STR_VAR item_name = ~ZSWOHL01~ END
     BUT_ONLY
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~STOBLACK.STO~ BEGIN
     COPY_EXISTING ~STOBLACK.STO~ ~override~ // black lily
                   ~STOSILEN.STO~ ~override~
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 24 STR_VAR item_name = ~ZSWOPS01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOEL01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOCD01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 4 STR_VAR item_name = ~ZSWOFR01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOAC01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOMD01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 16 STR_VAR item_name = ~ZSWOPS01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 4 STR_VAR item_name = ~ZSWOPS02~  END // drow soporific oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOPS03~  END // dragon bile
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOEL01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOCD01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 4 STR_VAR item_name = ~ZSWOFR01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOAC01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOMD01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOUL01~  END
     BUT_ONLY
 END
 
@@ -205,17 +266,21 @@ ACTION_IF FILE_EXISTS_IN_GAME ~bdbeleg3.STO~ BEGIN
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 8 STR_VAR item_name = ~ZSWOFR01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 8 STR_VAR item_name = ~ZSWOAC01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 5 STR_VAR item_name = ~ZSWOMD01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 4 STR_VAR item_name = ~ZSWOHL01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOPS02~ END // drow soporific oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOPS03~ END // dragon bile
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOPS04~ END // Dragonsbane oil
     BUT_ONLY
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~bdnazram.STO~ BEGIN
     COPY_EXISTING ~bdnazram.STO~ ~override~ // sod genie
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 4 STR_VAR item_name = ~ZSWOPS01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOEL01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOCD01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 4 STR_VAR item_name = ~ZSWOPS01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOEL01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOCD01~  END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 12 STR_VAR item_name = ~ZSWOFR01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOAC01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOMD01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOAC01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOMD01~  END
     BUT_ONLY
 END
 
@@ -232,6 +297,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~bdpolvi.STO~ BEGIN
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 4 STR_VAR item_name = ~ZSWOCD01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 4 STR_VAR item_name = ~ZSWOFR01~ END
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOMD01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOMD01~ END
     BUT_ONLY
 END
 
@@ -247,12 +313,14 @@ ACTION_IF FILE_EXISTS_IN_GAME ~HIGHHEDG.STO~ BEGIN
     COPY_EXISTING ~HIGHHEDG.STO~ ~override~ // HIGH HEDGE
                   ~STO0703.STO~ ~override~ // SORCEROUS SUNDRIES
                   ~bdsorcsc.STO~ ~override~ // sod sorcerous sundries
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOPS01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 20 STR_VAR item_name = ~ZSWOMD01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 20 STR_VAR item_name = ~ZSWOEL01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 20 STR_VAR item_name = ~ZSWOCD01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 20 STR_VAR item_name = ~ZSWOFR01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 20 STR_VAR item_name = ~ZSWOAC01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOPS01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 2 STR_VAR item_name = ~ZSWOPS02~  END // drow soporific oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 1 STR_VAR item_name = ~ZSWOPS03~  END // dragon bile
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 15 STR_VAR item_name = ~ZSWOMD01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 15 STR_VAR item_name = ~ZSWOEL01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 15 STR_VAR item_name = ~ZSWOCD01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 15 STR_VAR item_name = ~ZSWOFR01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 15 STR_VAR item_name = ~ZSWOAC01~ END
     BUT_ONLY
 END
 
@@ -266,42 +334,50 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~UDDROW24.STO~ BEGIN
     COPY_EXISTING ~UDDROW24.STO~ ~override~ //DROW VENDOR
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 24 STR_VAR item_name = ~ZSWOPS01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 9 STR_VAR item_name = ~ZSWOMD01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 9 STR_VAR item_name = ~ZSWOEL01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 9 STR_VAR item_name = ~ZSWOCD01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 9 STR_VAR item_name = ~ZSWOFR01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 9 STR_VAR item_name = ~ZSWOAC01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 12 STR_VAR item_name = ~ZSWOPS01~ END // poisonous oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOPS02~  END // drow soporific oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 9 STR_VAR item_name = ~ZSWOMD01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 9 STR_VAR item_name = ~ZSWOEL01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 9 STR_VAR item_name = ~ZSWOCD01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 9 STR_VAR item_name = ~ZSWOFR01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 9 STR_VAR item_name = ~ZSWOAC01~  END
     BUT_ONLY
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~AMSMUG01.STO~ BEGIN
     COPY_EXISTING ~AMSMUG01.STO~ ~override~ // AMEKTHRAN SMUGGLERS
                   ~AMSMUG02.STO~ ~override~
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 20 STR_VAR item_name = ~ZSWOPS01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 10 STR_VAR item_name = ~ZSWOMD01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 10 STR_VAR item_name = ~ZSWOEL01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 10 STR_VAR item_name = ~ZSWOCD01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 10 STR_VAR item_name = ~ZSWOFR01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 10 STR_VAR item_name = ~ZSWOAC01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 16 STR_VAR item_name = ~ZSWOPS01~ END // poisonous oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 9 STR_VAR item_name = ~ZSWOPS02~  END // drow soporific oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 5 STR_VAR item_name = ~ZSWOPS03~  END // dragon bile
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 4 STR_VAR item_name = ~ZSWOPS04~  END // Dragonsbane oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOPS05~  END // kuotoan oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOUL01~  END // profane oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOHL01~  END // sanctified oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 8 STR_VAR item_name = ~ZSWOMD01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 8 STR_VAR item_name = ~ZSWOEL01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 8 STR_VAR item_name = ~ZSWOCD01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 8 STR_VAR item_name = ~ZSWOFR01~  END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 8 STR_VAR item_name = ~ZSWOAC01~  END
     BUT_ONLY
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~25SPELL.STO~ BEGIN
     COPY_EXISTING ~25SPELL.STO~ ~override~ // ARCANA ARCHIVES
                   ~25SPELL2.STO~ ~override~
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 50 STR_VAR item_name = ~ZSWOMD01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 50 STR_VAR item_name = ~ZSWOEL01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 50 STR_VAR item_name = ~ZSWOCD01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 50 STR_VAR item_name = ~ZSWOFR01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 50 STR_VAR item_name = ~ZSWOAC01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 50 STR_VAR item_name = ~ZSWOMD01~ END // magic damage oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 50 STR_VAR item_name = ~ZSWOEL01~ END // ELECTRICAL damage oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 50 STR_VAR item_name = ~ZSWOCD01~ END // COLD damage oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 50 STR_VAR item_name = ~ZSWOFR01~ END // FIRE damage oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 50 STR_VAR item_name = ~ZSWOAC01~ END // ACID damage oil
     BUT_ONLY
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~UDDROW23.STO~ BEGIN
     COPY_EXISTING ~UDDROW23.STO~ ~override~ //DROW VENDOR
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOPS01~ END
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOMD01~ END
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 5 STR_VAR item_name = ~ZSWOPS01~  END // poisonous oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 10 STR_VAR item_name = ~ZSWOPS02~ END // drow soporific oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 3 STR_VAR item_name = ~ZSWOMD01~  END // magic damage oil
     BUT_ONLY
 END
 
@@ -309,8 +385,8 @@ ACTION_IF FILE_EXISTS_IN_GAME ~SAHPR1.STO~ BEGIN
     COPY_EXISTING ~SAHPR1.STO~ ~override~ //SAUHAGIN's PRIESTESS
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOEL01~ END // ELECTRICAL damage oil 20 units
         LPF ADD_STORE_ITEM_EX INT_VAR stack = 8 STR_VAR item_name = ~ZSWOCD01~ END // COLD damage oil 20 units
-        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOPS01~ END // POISON damage oil 20 units
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 6 STR_VAR item_name = ~ZSWOPS01~ END // POISON damage oil
+        LPF ADD_STORE_ITEM_EX INT_VAR stack = 1 STR_VAR item_name = ~ZSWOPS05~ END // kuotoan oil
     BUT_ONLY
 END
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////

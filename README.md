@@ -2,7 +2,9 @@
 
 This small mod simply adds a new class of items called "weapon oils". Essentially, they are consumable potions that apply a somewhat mild melee/ranged effect to your weapons. They are only distributed to stores so far. Compatibility with IWDEE not established yet, because I can't be bothered to check what stores there are and how to decide which stores make the most sense to place the items in. Feel free to offer feedback on this.
 
-I'm not a good writer, so the descriptions are pretty boring, and the icons were lazily made, but I think they're visually  distinguishable enough.
+Note that you cannot stack oils with themselves or each other, they are all set up so only one of them can be active. This of course can be abused with any other mods that may add similar items. If any of you can think of another mod that adds stuff like this, I can add some code to handle it so balance is not broken.
+
+Also, I'm not a good writer, so the descriptions are pretty boring, and most of the icons were lazily made, but I think they're visually  distinguishable enough.
 
 These are the list of available oils:
 
@@ -90,10 +92,15 @@ Should be compatible with everything as far as I know. Please offer feedback on 
 ## Known issues
 The noxious oil sometimes seems to not offer log feedback indicating whether the poisoning was resisted or not. I don't think it affects functionality though.
 
+Additionally, applying the oils through the inventory will be through a button that states "drink potion", which doesn't make sense (trust me, don't drink them for real, you'll die), but I don't think that can be helped.
+
 ## Future improvements
-- Maybe extra oils like "blessed water oil" (yes, I know that makes no sense), "drow poisonous oil", etc.
 - Maybe introduce it into some random treasure
 - Maybe introduce it into some selectively chosen creatures or containers.
 
 Offer feedback on this if you can and what else could be added or modified.
+
+## Acknowledgments and credits
+
+Many thanks to zenblack for providing great icons for some of the oils, as well as other modders such as The Artisan in the discord servers that helped me figure out some of the issues and ideas I've had for this mod.
 
