@@ -78,3 +78,26 @@ ACTION_IF FILE_EXISTS_IN_GAME ~CHALCY02.CRE~ BEGIN // chosen of cyric
         ADD_CRE_ITEM ~ZSWOPS03~ #2 #0 #0 ~none~ ~inv15~
     BUT_ONLY
 END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~DRAGBLUE.CRE~ BEGIN // abazigal, i.e. we're in bg2ee or eet
+    COPY_EXISTING ~DRAGBLUE.CRE~ ~override~
+                  ~DRAGRED.CRE~  ~override~
+                  ~DRAGBLAC.CRE~ ~override~
+                  ~DRAGBROW.CRE~ ~override~
+                  ~DRAGPURP.CRE~ ~override~
+                  ~DRAGSILV.CRE~ ~override~
+                  ~DRAGYELL.CRE~ ~override~
+                  ~DRAGSHAD.CRE~ ~override~
+                  ~FIRKRA02.CRE~ ~override~
+                  ~UDSILVER.CRE~ ~override~
+                  ~BAZDRA02.CRE~ ~override~
+        ADD_CRE_ITEM ~ZSWOPS03~ #5 #0 #0 ~unstealable~ ~inv15~ // dragon bile
+    BUT_ONLY
+END
+
+
+ACTION_IF FILE_EXISTS_IN_GAME ~bdmorent.CRE~ BEGIN // morentherene (sod)
+    COPY_EXISTING ~bdmorent.CRE~ ~override~
+        ADD_CRE_ITEM ~ZSWOPS03~ #3 #0 #0 ~unstealable~ ~inv15~ // dragon bile
+    BUT_ONLY
+END

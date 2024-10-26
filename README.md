@@ -1,6 +1,6 @@
 # ZS_WeaponOils
 
-This small mod simply adds a new class of items called "weapon oils". Essentially, they are consumable potions that apply a somewhat mild melee/ranged effect to your weapons. They are only distributed to stores so far. Compatibility with IWDEE not established yet, because I can't be bothered to check what stores there are and how to decide which stores make the most sense to place the items in. Feel free to offer feedback on this.
+This small mod simply adds a new class of items called "weapon oils". Essentially, they are consumable potions that apply a somewhat mild melee/ranged effect to your weapons. They are distributed to stores so far and a few select creatures. Compatibility with IWDEE not established yet, because I can't be bothered to check what stores there are and how to decide which stores make the most sense to place the items in. Feel free to offer feedback on this.
 
 Note that you cannot stack oils with themselves or each other, they are all set up so only one of them can be active. This of course can be abused with any other mods that may add similar items. If any of you can think of another mod that adds stuff like this, I can add some code to handle it so balance is not broken.
 
