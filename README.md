@@ -69,7 +69,7 @@ Duration: 1 turn
 Weight: 1
 
 ### Noxious Oil
-Base price: 1250
+Base price: 1200
 
 This noxious oil will make your weapons inflict poison damage when coated with it, and may indeed poison the target if they can't resist it. Dealing with poisons is a delicate task, only those of remarkable dexterity can use it without risking poisoning themselves.
 
@@ -79,6 +79,100 @@ STATISTICS:
 
 Damage: 1d2+1 poison damage
 Poisoning: Save vs. Death at +2 or suffer 6 points of poison damage over 2 rounds
+Self-damage: User suffers the same effect if their Dexterity is below 17
+Duration: 1 turn
+
+Weight: 1
+
+### Drow Soporific Oil
+Base price: 1750
+
+This oily soporific poison was created originally by the drow. When coated with it, affected creatures may fall in a deep slumber for 1 turn. Dealing with poisons is a delicate task, and as such, only those of remarkable dexterity can use it without risking poisoning themselves.
+
+Since it is a natural substance, it won't be stopped by Magic Resistance.
+
+STATISTICS:
+
+Damage: None
+Poisoning: Save vs. Death or fall into a deep slumber for 1 turn. Receiving further damage will awaken the target.
+Self-damage: User suffers the same effect if their Dexterity is below 17
+Duration: 1 turn
+
+Weight: 1
+
+### Sanctified Oil
+Base price: 2500
+
+This oil was blessed by a priest with anti-undead properties, which will make your weapons inflict extra damage to undead, with a chance of weakening them. While it is technically a magically-infused substance, it pierces through the defenses of undead as if they had no such resistances, including Magic Resistance.
+
+STATISTICS:
+
+Damage: +4 irresistible damage against the undead (no effect against others)
+Special: Undead targets must Save vs. Death at +2 or become Slowed and Weakened (-3 Strength, -2 AC) for 10 seconds. This effect doesn't stack with itself.
+Duration: 1 turn
+
+Weight: 1
+
+### Profane Oil
+Base price: 2500
+
+This oil was infused by a priest with Negative Plane energies, which will make your weapons inflict extra damage to living creatures, with a chance of weakening them. While it is technically a magically-infused substance, it pierces through the defenses of the living as if they had no such resistances, including Magic Resistance.
+
+STATISTICS:
+
+Damage: +4 irresistible damage against the living (no effect against others)
+Special: Living targets must Save vs. Death at +2 or become Slowed and Weakened (-3 Strength, -2 AC) for 10 seconds. This effect doesn't stack with itself.
+Duration: 1 turn
+
+Weight: 1
+
+### Kuo-Toan Oil of Stunning
+Base price: 2000
+
+The recipe of this oily poison was originally created by Kuo-Toan alchemists. When coated with it, hit creatures may become stunned for 2 rounds, unable to defend themselves. Dealing with poisons is a delicate task, and as such, only those of remarkable dexterity can use it without risking poisoning themselves.
+
+Since it is a natural substance, it won't be stopped by Magic Resistance.
+
+STATISTICS:
+
+Damage: None
+Poisoning: Save vs. Spell at +2 or become stunned for 2 rounds.
+Self-damage: User suffers the same effect if their Dexterity is below 17
+Duration: 1 turn
+
+Weight: 1
+
+### Dragon Bile Extract
+Base price: 3000
+
+This very rare, and very expensive poison was created by harvesting pure bile from dead dragons. When coated with it, hit creatures will have their Strength sapped. Dealing with poisons is a delicate task, and as such, only those of remarkable dexterity can use it without risking poisoning themselves.
+
+Since it is a natural substance, it won't be stopped by Magic Resistance.
+
+STATISTICS:
+
+Damage: +1 poison damage (non-dragons)
+Poisoning: Save vs. Death or have Strength and movement speed reduced by half for 5 rounds. Only true dragons are unaffected by this effect, and as such, close relatives like faerie dragons, dragonborn, half-dragons and wyvern will be affected.
+Self-damage: User suffers the same effect if their Dexterity is below 17
+Duration: 1 turn
+
+Weight: 1
+
+### Dragonsbane Oil
+Base price: 4000
+
+This oily poison was specifically formulated for one purpose: to cause pain and death to dragons and other draconic creatures. When hit by it, dragons, half-dragons, and wyverns suffer damage and have their breath drained out of their lungs, while other living targets are less affected. Dealing with poisons is a delicate task, and as such, only those of remarkable dexterity can use it without risking poisoning themselves.
+
+Since it is a natural substance, it won't be stopped by Magic Resistance.
+
+STATISTICS:
+
+Damage: 1d3+1 poison damage (non-draconic only), or 1d6+2 poison damage (draconic only)
+Special: Dragons, half-dragons and wyverns suffer the following effects if Save vs. Spell is failed:
+  – APR reduced to 1/2 for 1 round
+  – Strength is reduced by 40% for 2 rounds
+  – Casting speed, THAC0, and AC is reduced by 5 for 3 rounds
+  – The pain it causes may affect concentration: 50% chance of disrupting Stoneskin or Improved Invisibility.
 Self-damage: User suffers the same effect if their Dexterity is below 17
 Duration: 1 turn
 

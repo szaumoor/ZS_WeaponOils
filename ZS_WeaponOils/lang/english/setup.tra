@@ -94,7 +94,7 @@ Weight: 1~
 STATISTICS:
 
 Damage: +4 irresistible damage against the undead (no effect against others)
-Special: Undead targets must Save vs. Death at +2 or become Slowed and Weakened (-3 Strength, AC) for 10 seconds. This effect doesn't stack with itself.
+Special: Undead targets must Save vs. Death at +2 or become Slowed and Weakened (-3 Strength, -2 AC) for 10 seconds. This effect doesn't stack with itself.
 Duration: 1 turn
 
 Weight: 1~
@@ -106,7 +106,7 @@ Weight: 1~
 STATISTICS:
 
 Damage: +4 irresistible damage against the living (no effect against others)
-Special: Living targets must Save vs. Death at +2 or become Slowed and Weakened (-3 Strength, AC) for 10 seconds. This effect doesn't stack with itself.
+Special: Living targets must Save vs. Death at +2 or become Slowed and Weakened (-3 Strength, -2 AC) for 10 seconds. This effect doesn't stack with itself.
 Duration: 1 turn
 
 Weight: 1~
@@ -150,7 +150,11 @@ Since it is a natural substance, it won't be stopped by Magic Resistance.
 STATISTICS:
 
 Damage: 1d3+1 poison damage (non-draconic only), or 1d6+2 poison damage (draconic only)
-Special: Dragons, half-dragons, and wyverns have their APR reduced to 1/2 for the next round, have their Strength reduced by 40% for 2 rounds, and their casting speed, THAC0, and AC damaged by 5 for 3 rounds. The pain it causes to dragons is so intense that it may disrupt their concentration, having a 50% chance of causing their Stoneskin or Improved Invisibility spell to be disrupted. A Save vs. Spell must succeed to avoid this effect.
+Special: Dragons, half-dragons and wyverns suffer the following effects if Save vs. Spell is failed:
+  – APR reduced to 1/2 for 1 round
+  – Strength is reduced by 40% for 2 rounds
+  – Casting speed, THAC0, and AC is reduced by 5 for 3 rounds
+  – The pain it causes may affect concentration: 50% chance of disrupting Stoneskin or Improved Invisibility.
 Self-damage: User suffers the same effect if their Dexterity is below 17
 Duration: 1 turn
 

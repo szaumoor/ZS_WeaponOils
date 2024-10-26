@@ -1,0 +1,80 @@
+ACTION_IF FILE_EXISTS_IN_GAME ~UDPRINCE.CRE~ BEGIN // kuotoan prince
+    COPY_EXISTING ~UDPRINCE.CRE~ ~override~ // kuotoan prince
+        ADD_CRE_ITEM ~ZSWOPS05~ #10 #0 #0 ~none~ ~inv15~
+    BUT_ONLY
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~KUOLIE01.CRE~ BEGIN // kuotoan lieutenant
+    COPY_EXISTING ~KUOLIE01.CRE~ ~override~ // kuotoan lieutenant
+                  ~UDKUO01.CRE~  ~override~ // kuotoan leader
+        ADD_CRE_ITEM ~ZSWOPS05~ #3 #0 #0 ~none~ ~inv15~
+    BUT_ONLY
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~KUOCAP01.CRE~ BEGIN // kuotoan captain
+    COPY_EXISTING ~KUOCLE20.CRE~ ~override~ // kuotoan captain (cleric)
+        ADD_CRE_ITEM ~ZSWOPS05~ #2 #0 #0 ~none~ ~inv15~
+    BUT_ONLY
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~UDPHAE01.CRE~ BEGIN // phaere
+    COPY_EXISTING ~UDPHAE01.CRE~ ~override~ // phaere
+                  ~UDPHAE02.CRE~ ~override~ // phaere
+                  ~CUPHAER.CRE~ ~override~ // phaere
+                  ~UDSOLA01.CRE~ ~override~ // solaufein
+                  ~UDSOLA02.CRE~ ~override~ // solaufein
+                  ~DADROW10.CRE~ ~override~ // drow torturer
+                  ~DADROW11.CRE~ ~override~ // drow torturer
+                  ~DADROW8.CRE~  ~override~ // drow torturer
+                  ~DADROW9.CRE~  ~override~ // drow torturer
+                  ~DADROW6.CRE~  ~override~ // drow leader
+        ADD_CRE_ITEM ~ZSWOPS02~ #2 #0 #0 ~none~ ~inv15~
+    BUT_ONLY
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~bddrowas.CRE~ BEGIN // phaere
+    COPY_EXISTING ~bddrowas.CRE~ ~override~ // SOD drow assassin
+        ADD_CRE_ITEM ~ZSWOPS02~ #5 #0 #0 ~none~ ~inv15~
+        ADD_CRE_ITEM ~ZSWOPS01~ #3 #0 #0 ~none~ ~inv15~
+    BUT_ONLY
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~bmugg1.CRE~ BEGIN // mugger
+    COPY_EXISTING ~bmugg1.CRE~ ~override~
+        ADD_CRE_ITEM ~ZSWOPS02~ #1 #0 #0 ~none~ ~inv15~
+    BUT_ONLY
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~bdgass1.CRE~ BEGIN // assassin ducal palace (sod)
+    COPY_EXISTING ~bdgass1.CRE~ ~override~
+        ADD_CRE_ITEM ~ZSWOPS01~ #1 #0 #0 ~none~ ~inv15~
+        ADD_CRE_ITEM ~ZSWOPS02~ #1 #0 #0 ~none~ ~inv15~
+    BUT_ONLY
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~CULTT3.CRE~ BEGIN // cultist female assassin bgee
+    COPY_EXISTING ~CULTT3.CRE~ ~override~
+        ADD_CRE_ITEM ~ZSWOPS01~ #2 #0 #0 ~none~ ~inv15~
+    BUT_ONLY
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~SLYTHE.CRE~ BEGIN // SLYTHE
+    COPY_EXISTING ~SLYTHE.CRE~ ~override~
+                  ~KRYSTI.CRE~ ~override~ // KRYSTIN
+        ADD_CRE_ITEM ~ZSWOPS01~ #2 #0 #0 ~none~ ~inv15~
+        ADD_CRE_ITEM ~ZSWOPS03~ #1 #0 #0 ~none~ ~inv15~ // dragon bile
+    BUT_ONLY
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~SEVPAT05.CRE~ BEGIN // brennan risling
+    COPY_EXISTING ~SEVPAT05.CRE~ ~override~
+        ADD_CRE_ITEM ~ZSWOPS01~ #3 #0 #0 ~none~ ~inv15~
+    BUT_ONLY
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~CHALCY02.CRE~ BEGIN // chosen of cyric
+    COPY_EXISTING ~CHALCY02.CRE~ ~override~
+        ADD_CRE_ITEM ~ZSWOPS01~ #5 #0 #0 ~none~ ~inv15~
+        ADD_CRE_ITEM ~ZSWOPS03~ #2 #0 #0 ~none~ ~inv15~
+    BUT_ONLY
+END

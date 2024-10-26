@@ -1,0 +1,66 @@
+COPY ~%MOD_FOLDER%/oils/igneous_oil~ ~override~
+    COPY_EXISTING ~ZSWOFR01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1000) id_ref_desc=RESOLVE_STR_REF(@1001) END
+
+COPY ~%MOD_FOLDER%/oils/caustic_oil~ ~override~
+    COPY_EXISTING ~ZSWOAC01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1002) id_ref_desc=RESOLVE_STR_REF(@1003) END
+
+COPY ~%MOD_FOLDER%/oils/gelid_oil~ ~override~
+    COPY_EXISTING ~ZSWOCD01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1004) id_ref_desc=RESOLVE_STR_REF(@1005) END
+
+COPY ~%MOD_FOLDER%/oils/scintillating_oil~ ~override~
+    COPY_EXISTING ~ZSWOEL01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1006) id_ref_desc=RESOLVE_STR_REF(@1007) END
+
+COPY ~%MOD_FOLDER%/oils/arcane_oil~ ~override~
+    COPY_EXISTING ~ZSWOMD01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1008) id_ref_desc=RESOLVE_STR_REF(@1009) END
+
+COPY ~%MOD_FOLDER%/oils/noxious_oil~ ~override~
+    COPY_EXISTING ~ZSWOPS01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1010) id_ref_desc=RESOLVE_STR_REF(@1011) END
+    COPY_EXISTING ~ZSWOPOSB.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1010) END
+
+COPY ~%MOD_FOLDER%/oils/soporific_oil~ ~override~
+    COPY_EXISTING ~ZSWOPS02.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1012) id_ref_desc=RESOLVE_STR_REF(@1013) END
+    COPY_EXISTING ~ZSWOPOSD.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1012) END
+
+COPY ~%MOD_FOLDER%/oils/sanctified_oil~ ~override~
+    COPY_EXISTING ~ZSWOHL01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1014) id_ref_desc=RESOLVE_STR_REF(@1015) END
+    COPY_EXISTING ~ZSWOPHLB.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1014) END
+
+COPY ~%MOD_FOLDER%/oils/profane_oil~ ~override~
+    COPY_EXISTING ~ZSWOUL01.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1016) id_ref_desc=RESOLVE_STR_REF(@1017) END
+    COPY_EXISTING ~ZSWONHLB.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1016) END
+
+COPY ~%MOD_FOLDER%/oils/kuotoan_oil~ ~override~
+    COPY_EXISTING ~ZSWOPS05.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1018) id_ref_desc=RESOLVE_STR_REF(@1019) END
+    COPY_EXISTING ~ZSWOPOSK.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1018) END
+        PATCH_IF GAME_IS ~bgee~ BEGIN // PATCH stunned strref in BGEE
+            LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = 26050 END
+        END
+
+COPY ~%MOD_FOLDER%/oils/dragon_bile~ ~override~
+    COPY_EXISTING ~ZSWOPS03.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1020) id_ref_desc=RESOLVE_STR_REF(@1021) END
+    COPY_EXISTING ~ZSWOPOSF.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1020) END
+
+COPY ~%MOD_FOLDER%/oils/dragonsbane_oil~ ~override~
+    COPY_EXISTING ~ZSWOPS04.ITM~ ~override~
+        LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1022) id_ref_desc=RESOLVE_STR_REF(@1023) END
+    COPY_EXISTING ~ZSWOPOSH.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1022) END
+    COPY_EXISTING ~ZSWOPOSI.SPL~ ~override~
+        LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1022) END
