@@ -122,7 +122,6 @@ WITH_SCOPE BEGIN
             PATCH_IF chance > 75 BEGIN
                 SET amount = RANDOM(1 3)
                 PATCH_IF kit = IDS_OF_SYMBOL(kit ASSASIN) BEGIN
-                    PATCH_PRINT ~found a filthy assassin AGAIN~
                     amount = amount * 2
                 END
                 ADD_CRE_ITEM ~ZSWOPS01~ (amount) (0) (0) ~none~ ~inv~ // poison oil
