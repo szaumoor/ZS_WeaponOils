@@ -78,7 +78,7 @@ STATISTICS:
 
 Damage: 1d2+1 poison damage
 Poisoning: Save vs. Death at +2 or suffer 6 points of poison damage over 2 rounds
-Self-damage: User suffers the same effect if their Dexterity is below 17
+Self-damage: User suffers the same effect if their Dexterity is below 16
 Duration: 1 turn
 
 Weight: 1
@@ -94,7 +94,7 @@ STATISTICS:
 
 Damage: None
 Poisoning: Save vs. Death or fall into a deep slumber for 1 turn. Receiving further damage will awaken the target.
-Self-damage: User suffers the same effect if their Dexterity is below 17
+Self-damage: User suffers the same effect if their Dexterity is below 16
 Duration: 1 turn
 
 Weight: 1
@@ -107,7 +107,7 @@ This oil was blessed by a priest with anti-undead properties, which will make yo
 STATISTICS:
 
 Damage: +4 irresistible damage against the undead (no effect against others)
-Special: Undead targets must Save vs. Death at +2 or become Slowed and Weakened (-3 Strength, -2 AC) for 10 seconds. This effect doesn't stack with itself.
+Special: Undead targets must Save vs. Death at +2 or become Slowed and Weakened (-3 Strength, -2 Armor Class) for 10 seconds. This effect doesn't stack with itself.
 Duration: 1 turn
 
 Weight: 1
@@ -120,7 +120,7 @@ This oil was infused by a priest with Negative Plane energies, which will make y
 STATISTICS:
 
 Damage: +4 irresistible damage against the living (no effect against others)
-Special: Living targets must Save vs. Death at +2 or become Slowed and Weakened (-3 Strength, -2 AC) for 10 seconds. This effect doesn't stack with itself.
+Special: Living targets must Save vs. Death at +2 or become Slowed and Weakened (-3 Strength, -2 Armor Class) for 10 seconds. This effect doesn't stack with itself.
 Duration: 1 turn
 
 Weight: 1
@@ -136,7 +136,7 @@ STATISTICS:
 
 Damage: None
 Poisoning: Save vs. Spell at +2 or become stunned for 2 rounds.
-Self-damage: User suffers the same effect if their Dexterity is below 17
+Self-damage: User suffers the same effect if their Dexterity is below 16
 Duration: 1 turn
 
 Weight: 1
@@ -152,7 +152,7 @@ STATISTICS:
 
 Damage: +1 poison damage (non-dragons)
 Poisoning: Save vs. Death or have Strength and movement speed reduced by half for 5 rounds. Only true dragons are unaffected by this effect, and as such, close relatives like faerie dragons, dragonborn, half-dragons and wyvern will be affected.
-Self-damage: User suffers the same effect if their Dexterity is below 17
+Self-damage: User suffers the same effect if their Dexterity is below 16
 Duration: 1 turn
 
 Weight: 1
@@ -170,9 +170,9 @@ Damage: 1d3+1 poison damage (non-draconic only), or 1d6+2 poison damage (draconi
 Special: Dragons, half-dragons and wyverns suffer the following effects if Save vs. Spell is failed:
   – APR reduced to 1/2 for 1 round
   – Strength is reduced by 40% for 2 rounds
-  – Casting speed, THAC0, and AC is reduced by 5 for 3 rounds
+  – Casting speed, THAC0, and Armor Class are damaged by 5 points for 3 rounds
   – The pain it causes may affect concentration: 50% chance of disrupting Stoneskin or Improved Invisibility.
-Self-damage: User suffers the same effect if their Dexterity is below 17
+Self-damage: User suffers the same effect if their Dexterity is below 16
 Duration: 1 turn
 
 Weight: 1
