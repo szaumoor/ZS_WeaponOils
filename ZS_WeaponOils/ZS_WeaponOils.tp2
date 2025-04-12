@@ -1,7 +1,7 @@
 BACKUP "weidu_external/backup/ZS_WeaponOils"
-AUTHOR "RoyalProtector at Gibberlings's forum https://www.gibberlings3.net/profile/12720-royalprotector/"
-VERSION "v1.1"
-README ~ZS_WeaponOils/README.md~
+SUPPORT "RoyalProtector at Gibberlings's forum https://www.gibberlings3.net/profile/12720-royalprotector/"
+VERSION "v1.2"
+README ~%MOD_FOLDER%/README.md~
 AUTO_EVAL_STRINGS
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 ALWAYS
