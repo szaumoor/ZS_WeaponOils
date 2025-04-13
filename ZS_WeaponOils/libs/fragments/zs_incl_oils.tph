@@ -4,6 +4,7 @@ COPY ~%MOD_FOLDER%/oils/igneous_oil~ ~override~
 
 COPY ~%MOD_FOLDER%/oils/caustic_oil~ ~override~
     COPY_EXISTING ~ZSWOAC01.ITM~ ~override~
+                  ~ZSWONPC0.ITM~ ~override~
         LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1002) id_ref_desc=RESOLVE_STR_REF(@1003) END
 
 COPY ~%MOD_FOLDER%/oils/gelid_oil~ ~override~
@@ -20,12 +21,14 @@ COPY ~%MOD_FOLDER%/oils/arcane_oil~ ~override~
 
 COPY ~%MOD_FOLDER%/oils/noxious_oil~ ~override~
     COPY_EXISTING ~ZSWOPS01.ITM~ ~override~
+                  ~ZSWONPC1.ITM~ ~override~
         LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1010) id_ref_desc=RESOLVE_STR_REF(@1011) END
     COPY_EXISTING ~ZSWOPOSB.SPL~ ~override~
         LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1010) END
 
 COPY ~%MOD_FOLDER%/oils/soporific_oil~ ~override~
     COPY_EXISTING ~ZSWOPS02.ITM~ ~override~
+                  ~ZSWONPC2.ITM~ ~override~
         LPF ALTER_ITEM INT_VAR id_ref_name=RESOLVE_STR_REF(@1012) id_ref_desc=RESOLVE_STR_REF(@1013) END
     COPY_EXISTING ~ZSWOPOSD.SPL~ ~override~
         LPF ALTER_SPELL INT_VAR ref_name = RESOLVE_STR_REF(@1012) END
