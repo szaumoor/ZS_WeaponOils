@@ -92,9 +92,7 @@ Since it is a natural substance, it won't be stopped by Magic Resistance.
 
 STATISTICS:
 
-Damage: None
-
-Poisoning: Save vs. Death or fall into a deep slumber for 1 turn. Receiving further damage will awaken the target.<br>Self-damage: User suffers the same effect if their Dexterity is below 16<br>Duration: 1 turn
+Damage: None<br>Poisoning: Save vs. Death or fall into a deep slumber for 1 turn. Receiving further damage will awaken the target.<br>Self-damage: User suffers the same effect if their Dexterity is below 16<br>Duration: 1 turn
 
 Weight: 1
 
