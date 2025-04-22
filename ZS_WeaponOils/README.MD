@@ -14,8 +14,7 @@ This oil will make your weapons inflict fire damage when coated with it. Since i
 
 STATISTICS:
 
-Damage: 1d2+1 fire damage (Save vs. Breath for half)
-Duration: 1 turn
+Damage: 1d2+1 fire damage (Save vs. Breath for half)<br>Duration: 1 turn
 
 Weight: 1
 
@@ -26,8 +25,7 @@ This acidic oil will make your weapons inflict acid damage when coated with it. 
 
 STATISTICS:
 
-Damage: 1d2+1 acid damage (Save vs. Breath for half)
-Duration: 1 turn
+Damage: 1d2+1 acid damage (Save vs. Breath for half)<br>Duration: 1 turn
 
 Weight: 1
 
@@ -38,8 +36,7 @@ This super-cooled oil will make your weapons inflict cold damage when coated wit
 
 STATISTICS:
 
-Damage: 1d2+1 cold damage (Save vs. Breath for half)
-Duration: 1 turn
+Damage: 1d2+1 cold damage (Save vs. Breath for half)<br>Duration: 1 turn
 
 Weight: 1
 
@@ -50,8 +47,7 @@ This electrically charged oil will make your weapons inflict electric damage whe
 
 STATISTICS:
 
-Damage: 1d2+1 electric damage (Save vs. Breath for half)
-Duration: 1 turn
+Damage: 1d2+1 electric damage (Save vs. Breath for half)<br>Duration: 1 turn
 
 Weight: 1
 
@@ -62,8 +58,7 @@ This oil is charged with magical energy and will make your weapons inflict magic
 
 STATISTICS:
 
-Damage: 1d4+2 magic damage
-Duration: 1 turn
+Damage: 1d4+2 magic damage<br>Duration: 1 turn
 
 Weight: 1
 
@@ -76,10 +71,7 @@ Since it is a natural substance, it won't be stopped by Magic Resistance.
 
 STATISTICS:
 
-Damage: 1d2+1 poison damage
-Poisoning: Save vs. Death at +2 or suffer 6 points of poison damage over 2 rounds
-Self-damage: User suffers the same effect if their Dexterity is below 16
-Duration: 1 turn
+Damage: 1d2+1 poison damage<br>Poisoning: Save vs. Death at +2 or suffer 6 points of poison damage over 2 rounds<br>Self-damage: User suffers the same effect if their Dexterity is below 16<br>Duration: 1 turn
 
 Weight: 1
 
@@ -103,9 +95,7 @@ This oil was blessed by a priest with anti-undead properties, which will make yo
 
 STATISTICS:
 
-Damage: +4 irresistible damage against the undead (no effect against others)
-Special: Undead targets must Save vs. Death at +2 or become Slowed and Weakened (-3 Strength, -2 Armor Class) for 10 seconds. This effect doesn't stack with itself.
-Duration: 1 turn
+Damage: +4 irresistible damage against the undead (no effect against others)<br>Special: Undead targets must Save vs. Death at +2 or become Slowed and Weakened (-3 Strength, -2 Armor Class) for 10 seconds. This effect doesn't stack with itself.<br>Duration: 1 turn
 
 Weight: 1
 
@@ -116,9 +106,7 @@ This oil was infused by a priest with Negative Plane energies, which will make y
 
 STATISTICS:
 
-Damage: +4 irresistible damage against the living (no effect against others)
-Special: Living targets must Save vs. Death at +2 or become Slowed and Weakened (-3 Strength, -2 Armor Class) for 10 seconds. This effect doesn't stack with itself.
-Duration: 1 turn
+Damage: +4 irresistible damage against the living (no effect against others)<br>Special: Living targets must Save vs. Death at +2 or become Slowed and Weakened (-3 Strength, -2 Armor Class) for 10 seconds. This effect doesn't stack with itself.<br>Duration: 1 turn
 
 Weight: 1
 
@@ -131,10 +119,7 @@ Since it is a natural substance, it won't be stopped by Magic Resistance.
 
 STATISTICS:
 
-Damage: None
-Poisoning: Save vs. Spell at +2 or become stunned for 2 rounds.
-Self-damage: User suffers the same effect if their Dexterity is below 16
-Duration: 1 turn
+Damage: None<br>Poisoning: Save vs. Spell at +2 or become stunned for 2 rounds.<br>Self-damage: User suffers the same effect if their Dexterity is below 16<br>Duration: 1 turn
 
 Weight: 1
 
@@ -147,10 +132,7 @@ Since it is a natural substance, it won't be stopped by Magic Resistance.
 
 STATISTICS:
 
-Damage: +1 poison damage (non-dragons)
-Poisoning: Save vs. Death or have Strength and movement speed reduced by half for 5 rounds. Only true dragons are unaffected by this effect, and as such, close relatives like faerie dragons, dragonborn, half-dragons and wyvern will be affected.
-Self-damage: User suffers the same effect if their Dexterity is below 16
-Duration: 1 turn
+Damage: +1 poison damage (non-dragons)<br>Poisoning: Save vs. Death or have Strength and movement speed reduced by half for 5 rounds. Only true dragons are unaffected by this effect, and as such, close relatives like faerie dragons, dragonborn, half-dragons and wyvern will be affected.<br>Self-damage: User suffers the same effect if their Dexterity is below 16<br>Duration: 1 turn
 
 Weight: 1
 
@@ -163,14 +145,7 @@ Since it is a natural substance, it won't be stopped by Magic Resistance.
 
 STATISTICS:
 
-Damage: 1d3+1 poison damage (non-draconic only), or 1d6+2 poison damage (draconic only)
-Special: Dragons, half-dragons and wyverns suffer the following effects if Save vs. Spell is failed:
-  – APR reduced to 1/2 for 1 round
-  – Strength is reduced by 40% for 2 rounds
-  – Casting speed, THAC0, and Armor Class are damaged by 5 points for 3 rounds
-  – The pain it causes may affect concentration: 50% chance of disrupting Stoneskin or Improved Invisibility.
-Self-damage: User suffers the same effect if their Dexterity is below 16
-Duration: 1 turn
+Damage: 1d3+1 poison damage (non-draconic only), or 1d6+2 poison damage (draconic only)<br>Special: Dragons, half-dragons and wyverns suffer the following effects if Save vs. Spell is failed:<br>  – APR reduced to 1/2 for 1 round<br>  – Strength is reduced by 40% for 2 rounds<br>  – Casting speed, THAC0, and Armor Class are damaged by 5 points for 3 rounds<br>  – The pain it causes may affect concentration: 50% chance of disrupting Stoneskin or Improved Invisibility.<br>Self-damage: User suffers the same effect if their Dexterity is below 16<br>Duration: 1 turn
 
 Weight: 1
 
