@@ -1,12 +1,3 @@
-# ZS_WeaponOils
-This small mod simply adds a new class of items called "weapon oils". Essentially, they are consumable potions that apply a somewhat mild melee/ranged effect to your weapons. They are distributed to stores so far and a few select creatures. Compatibility with IWDEE not established yet, because I can't be bothered to check what stores there are and how to decide which stores make the most sense to place the items in. Feel free to offer feedback on this.
-
-Note that you cannot stack oils with themselves or each other, they are all set up so only one of them can be active. This of course can be abused with any other mods that may add similar items. If any of you can think of another mod that adds stuff like this, I can add some code to handle it so balance is not broken.
-
-Also, I'm not a good writer, so the descriptions are pretty boring, and most of the icons were lazily made, but I think they're visually  distinguishable enough.
-
-These are the list of available oils:
-
 ### Igneous Oil
 Base price: 500 gp
 
@@ -148,23 +139,3 @@ STATISTICS:
 Damage: 1d3+1 poison damage (non-draconic only), or 1d6+2 poison damage (draconic only)<br>Special: Dragons, half-dragons and wyverns suffer the following effects if Save vs. Spell is failed:<br>  – APR reduced to 1/2 for 1 round<br>  – Strength is reduced by 40% for 2 rounds<br>  – Casting speed, THAC0, and Armor Class are damaged by 5 points for 3 rounds<br>  – The pain it causes may affect concentration: 50% chance of disrupting Stoneskin or Improved Invisibility.<br>Self-damage: User suffers the same effect if their Dexterity is below 16<br>Duration: 1 turn
 
 Weight: 1
-
----
-
-## Compatibility
-Should be compatible with everything as far as I know. Please offer feedback on balance and the supply of oils throughout the game if you try this.
-
-## Known issues
-The noxious oil sometimes seems to not offer log feedback indicating whether the poisoning was resisted or not. I don't think it affects functionality though.
-
-Additionally, applying the oils through the inventory will be through a button that states "drink potion", which doesn't make sense (trust me, don't drink them for real, you'll die), but I don't think that can be helped.
-
-## Future improvements
-- Maybe introduce it into some random treasure
-- Maybe add a few more oils (precision, keen edge, perhaps)
-
-Offer feedback on this if you can and what else could be added or modified.
-
-## Acknowledgments and credits
-Many thanks to zenblack for providing great icons for the oils, as well as other modders such as The Artisan in the discord servers that helped me figure out some of the issues and ideas I've had for this mod.
-
