@@ -37,7 +37,7 @@ jobs:
       - name: Create filtered zip
         run: |
           mkdir package
-          rsync -av --exclude='images/' --exclude='README.md' --exclude='LICENSE' --exclude='.github/' --exclude='.git/' --exclude='package/' ./ package/
+          rsync -av --exclude='changelog.md' --exclude='README.md' --exclude='LICENSE' --exclude='.github/' --exclude='.git/' --exclude='package/' ./ package/
           cd package
           zip -r ../ZS_WeaponOils_${TAG_NAME}.zip .
 
@@ -47,7 +47,7 @@ jobs:
             echo "body<<EOF" >> $GITHUB_OUTPUT
             cat changelog.md >> $GITHUB_OUTPUT
             echo "EOF" >> $GITHUB_OUTPUT
-            
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
