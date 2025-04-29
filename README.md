@@ -10,12 +10,12 @@ Also, I'm not a good writer, so the descriptions are pretty boring, and most of 
 These are the available oils: Igneous Oil, Caustic Oil
 
 - **Gelid** Oil: 1d2+1 cold damage (Save vs. Breath for half)
-- **Scintillating** Oil: lasts 1 turn, 1d2+1 electric damage (Save vs. Breath for half)
-- **Arcane** Oil: 1d4+2 magic damage
-- **Noxious** Oil 1d2+1 poison damage (Save vs. Death at +2 or suffer 6 points of poison damage over 2 rounds)
+- **Scintillating** Oil: 1d2+1 electric damage (Save vs. Breath for half)
+- **Arcane** Oil: 1d4+2 magic damage (no save allowed)
+- **Noxious** Oil: 1d2+1 poison damage (Save vs. Death at +2 or suffer 6 points of poison damage over 2 rounds)
 - **Drow** **Soporific** Oil: Save vs. Death or fall into a deep slumber for 1 turn (damage will awaken the target)
 - **Sanctified** Oil: +4 irresistible damage against the undead, must Save vs. Death at +2 or become Slowed and Weakened for 10 seconds
-- **Profane** Oil: as sanctified oil, but only vs. the living
+- **Profane** Oil: as sanctified oil, but only works vs. the living
 - **Kuo-Toan** Oil of **Stunning**: Save vs. Spell at +2 or become stunned for 2 rounds. Very limited in quantity.
 - **Dragon Bile** Extract: +1 poison damage (nondragons), Save vs. Death or have strength and movement speed reduced to half for 5 rounds. Only true pure dragons are unaffected.
 - **Dragonsbane** Oil: 1d3+1 poison damage (non-draconic only), or 1d6+2 poison damage (draconic only). All dragons and cousins are severely weakened for one round and may have their Stoneskin or Improved Invisibility disrupted. The weakening effect wears off in intensity over three rounds.
