@@ -9,6 +9,8 @@ Also, I'm not a good writer, so the descriptions are pretty boring, and most of 
 
 These are the available oils: Igneous Oil, Caustic Oil
 
+-**Igneous** Oil: 1d2+1 fire damage (Save vs. Breath for half)
+- **Caustic** Oil: 1d2+1 acid damage (Save vs. Breath for half)
 - **Gelid** Oil: 1d2+1 cold damage (Save vs. Breath for half)
 - **Scintillating** Oil: 1d2+1 electric damage (Save vs. Breath for half)
 - **Arcane** Oil: 1d4+2 magic damage (no save allowed)
