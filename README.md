@@ -7,7 +7,7 @@ Note that you cannot stack oils with themselves or each other, they are all set 
 
 Also, I'm not a good writer, so the descriptions are pretty boring, and most of the icons were lazily made, but I think they're visually  distinguishable enough.
 
-These are the available oils: Igneous Oil, Caustic Oil
+These are the available oils:
 
 -**Igneous** Oil: 1d2+1 fire damage (Save vs. Breath for half)
 - **Caustic** Oil: 1d2+1 acid damage (Save vs. Breath for half)
