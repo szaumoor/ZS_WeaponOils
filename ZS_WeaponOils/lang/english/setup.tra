@@ -159,3 +159,17 @@ Self-damage: User suffers the same effect if their Dexterity is below 16
 Duration: 1 turn
 
 Weight: 1~
+
+@2000 = ~Weapons coated with Arcane Oil~
+@2001 = ~Weapons coated with Caustic Oil~
+@2002 = ~Weapons coated with Dragon Bile~
+@2003 = ~Weapons coated with Dragonsbane Oil~
+@2004 = ~Weapons coated with Soporific Oil~
+@2005 = ~Weapons coated with Gelid Oil~
+@2006 = ~Weapons coated with Igneous Oil~
+@2007 = ~Weapons coated with Kuo-Toan Oil~
+@2008 = ~Weapons coated with Noxious Oil~
+@2009 = ~Weapons coated with Profane Oil~
+@2010 = ~Weapons coated with Scintillating Oil~
+@2011 = ~Weapons coated with Sanctified Oil~
+
