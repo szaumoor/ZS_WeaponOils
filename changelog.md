@@ -1,3 +1,4 @@
-1.4.1
+# Changelog
 
-- Oils will now add a console log line when an user uses them, along the lines of "Weapons coated with [oil name]".
+- Fixed a few issues with incorrect description icons
+- Replaced description icons for better quality ones with better proportions
