@@ -140,15 +140,16 @@ Weight: 1~
 STATISTICS:
 
 Damage: 1d3+1 poison damage (non-draconic only), or 1d6+2 poison damage (draconic only)
-Weakening: Dragons, half-dragons, and wyverns suffer the following effects once per three sounds if Save vs. Spell is failed:
+Weakening: Dragons, half-dragons, and wyverns suffer the following effects once per three rounds if save vs. Spell at -1 is failed:
   – Attacks per round reduced to 1/2 for 1 round
   – Strength is reduced by 40% for 2 rounds
   – Casting speed, THAC0, and Armor Class are damaged by 4 points for 3 rounds
-The pain it causes may affect concentration: 50% chance of disrupting Stoneskin or Improved Invisibility.
+The pain it causes may affect concentration: 50% chance of disrupting Stoneskin or any kind of Invisibility.
 Self-damage: User suffers the same effect if their Dexterity is below 16. Blackguards and assassins are immune to this effect. Other thieves have a 50% chance of being affected; bards have a 70% chance.
 Duration: 8 rounds
 
 Weight: 1~
+@1024 = ~Weakened by Dragonsbane Oil~
 
 @2000 = ~Weapons coated with Arcane Oil~
 @2001 = ~Weapons coated with Caustic Oil~
