@@ -3,12 +3,7 @@ SUPPORT "RoyalProtector at Gibberlings's forum https://www.gibberlings3.net/prof
 VERSION "v1.4.3"
 README ~%MOD_FOLDER%/README.md~
 AUTO_EVAL_STRINGS
-/////////////////////////////////////////////////////////////////////////////////////////////////////
-ALWAYS
-    INCLUDE ~%MOD_FOLDER%/libs/zs_alter_functions.tpa~
-    INCLUDE ~%MOD_FOLDER%/libs/zs_checks.tpa~
-END
-/////////////////////////////////////////////////////////////////////////////////////////////////////
+
 LANGUAGE
 "English"
 "english"
@@ -17,9 +12,11 @@ LANGUAGE
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 BEGIN @100 DESIGNATED 100
 REQUIRE_PREDICATE GAME_IS "bgee bg2ee eet" @500
-/////////////////////////////////////////////////////////////////////////////////////////////////////
 
+INCLUDE ~%MOD_FOLDER%/libs/zs_alter_functions.tpa~
+INCLUDE ~%MOD_FOLDER%/libs/zs_checks.tpa~
 INCLUDE ~%MOD_FOLDER%/zswo_config.txt~
+
 ACTION_IF (ABS zswo_thief_noxious_oil_assignment_chances) - (ABS zswo_thief_caustic_oil_assignment_chances) < 0 BEGIN
     FAIL "Revise probabilities, one of them is stepping over the other: %zswo_thief_noxious_oil_assignment_chances% vs %zswo_thief_caustic_oil_assignment_chances%"
 END
@@ -27,5 +24,4 @@ END
 INCLUDE ~%MOD_FOLDER%/libs/fragments/zs_incl_oils.tph~ // inserting oils into the game files
 INCLUDE ~%MOD_FOLDER%/libs/fragments/zs_incl_oils_stores.tph~ // inserting oils into the stores
 INCLUDE ~%MOD_FOLDER%/libs/fragments/zs_incl_oils_cre.tph~ // inserting oils into the creatures' inventories
-
 /////////////////////////////////////////////////////////////////////////////////////////////////////

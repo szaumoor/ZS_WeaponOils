@@ -4,7 +4,7 @@
 // probabilities a thief gets at least noxious oil
 OUTER_SET zswo_thief_noxious_oil_assignment_chances = "25"
 
-// probabilities a thief gets drow soporific oil, if the thief gets matched for noxious oil
+// probabilities a thief gets drow soporific oil, *IF* the thief gets matched for noxious oil
 OUTER_SET zswo_thief_drow_poison_assignment_chances = "15"
 
 // probabilities a thief gets caustic oil *ONLY IF* they don't get noxious oil; in order words, this probability should be balanced around the probabilities of noxious oil. For example, if noxious oil chances are 60%, caustic oil chances should be 40 *at most* (may be lowered so there's a chance the creature gets nothing); or if noxious oil is 10%, caustic oil chances should be 90% *at most*. If this is not done, it will be possible for the assignments to not work correctly
