@@ -1,4 +1,5 @@
 # Changelog
 
-- Fixed a few issues with incorrect description icons
-- Replaced description icons for better quality ones with better proportions
+- Added compatibility bits for Pits of Despair
+- Added configuration options for Pits of Despair: whether to include them, which to include, and how many of each oil to include
+- Added configuration options to determine the price of the oils

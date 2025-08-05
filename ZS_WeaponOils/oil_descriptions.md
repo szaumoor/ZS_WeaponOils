@@ -1,4 +1,5 @@
 ### Igneous Oil
+
 Base price: 500 gp
 
 This oil will make your weapons inflict fire damage when coated with it. Since it is a natural substance, it won't be stopped by Magic Resistance.
@@ -10,6 +11,7 @@ Damage: 1d2+1 fire damage (Save vs. Breath for half)<br>Duration: 1 turn
 Weight: 1
 
 ### Caustic Oil
+
 Base price: 500 gp
 
 This acidic oil will make your weapons inflict acid damage when coated with it. Since it is a natural substance, it won't be stopped by Magic Resistance.
@@ -21,6 +23,7 @@ Damage: 1d2+1 acid damage (Save vs. Breath for half)<br>Duration: 1 turn
 Weight: 1
 
 ### Gelid Oil
+
 Base price: 500 gp
 
 This super-cooled oil will make your weapons inflict cold damage when coated with it. Since it is a natural substance, it won't be stopped by Magic Resistance.
@@ -32,6 +35,7 @@ Damage: 1d2+1 cold damage (Save vs. Breath for half)<br>Duration: 1 turn
 Weight: 1
 
 ### Scintillating Oil
+
 Base price: 500 gp
 
 This electrically charged oil will make your weapons inflict electric damage when coated with it. Since it is a natural substance, it won't be stopped by Magic Resistance.
@@ -43,6 +47,7 @@ Damage: 1d2+1 electric damage (Save vs. Breath for half)<br>Duration: 1 turn
 Weight: 1
 
 ### Arcane Oil
+
 Base price: 1000
 
 This oil is charged with magical energy and will make your weapons inflict magic damage when coated with it. Since it is a magical substance, it may be stopped by Magic Resistance.
@@ -54,6 +59,7 @@ Damage: 1d4+2 magic damage<br>Duration: 1 turn
 Weight: 1
 
 ### Noxious Oil
+
 Base price: 1200
 
 This noxious oil will make your weapons inflict poison damage when coated with it, and may indeed poison the target if they can't resist it. Dealing with poisons is a delicate task, only those of remarkable dexterity can use it without risking poisoning themselves.
@@ -67,6 +73,7 @@ Damage: 1d2+1 poison damage<br>Poisoning: Save vs. Death at +2 or suffer 6 point
 Weight: 1
 
 ### Drow Soporific Oil
+
 Base price: 1750
 
 This oily soporific poison was created originally by the drow. When coated with it, affected creatures may fall in a deep slumber for 1 turn. Dealing with poisons is a delicate task, and as such, only those of remarkable dexterity can use it without risking poisoning themselves.
@@ -80,6 +87,7 @@ Damage: None<br>Poisoning: Save vs. Death or fall into a deep slumber for 1 turn
 Weight: 1
 
 ### Sanctified Oil
+
 Base price: 2500
 
 This oil was blessed by a priest with anti-undead properties, which will make your weapons inflict extra damage to undead, with a chance of weakening them. While it is technically a magically-infused substance, it pierces through the defenses of undead as if they had no such resistances, including Magic Resistance.
@@ -91,6 +99,7 @@ Damage: +4 irresistible damage against the undead (no effect against others)<br>
 Weight: 1
 
 ### Profane Oil
+
 Base price: 2500
 
 This oil was infused by a priest with Negative Plane energies, which will make your weapons inflict extra damage to living creatures, with a chance of weakening them. While it is technically a magically-infused substance, it pierces through the defenses of the living as if they had no such resistances, including Magic Resistance.
@@ -102,6 +111,7 @@ Damage: +4 irresistible damage against the living (no effect against others)<br>
 Weight: 1
 
 ### Kuo-Toan Oil of Stunning
+
 Base price: 2000
 
 The recipe of this oily poison was originally created by Kuo-Toan alchemists. When coated with it, hit creatures may become stunned for 2 rounds, unable to defend themselves. Dealing with poisons is a delicate task, and as such, only those of remarkable dexterity can use it without risking poisoning themselves.
@@ -115,6 +125,7 @@ Damage: None<br>Poisoning: Save vs. Spell at +2 or become stunned for 2 rounds.<
 Weight: 1
 
 ### Dragon Bile Extract
+
 Base price: 3000
 
 This very rare, and very expensive poison was created by harvesting pure bile from dead dragons. When coated with it, hit creatures will have their Strength sapped. Dealing with poisons is a delicate task, and as such, only those of remarkable dexterity can use it without risking poisoning themselves.
@@ -128,6 +139,7 @@ Damage: +1 poison damage (non-dragons)<br>Poisoning: Save vs. Death or have Stre
 Weight: 1
 
 ### Dragonsbane Oil
+
 Base price: 4000
 
 This oily poison was specifically formulated for one purpose: to cause pain and death to dragons and other draconic creatures. When hit by it, dragons, half-dragons, and wyverns suffer damage and have their breath drained out of their lungs, while other living targets are less affected. Dealing with poisons is a delicate task, and as such, only those of remarkable dexterity can use it without risking poisoning themselves.
