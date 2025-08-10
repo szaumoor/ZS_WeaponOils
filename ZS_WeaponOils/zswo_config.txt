@@ -1,3 +1,6 @@
+// allow random distribution of oils to various creatures
+OUTER_SET zswo_allow_random_redistribution_cre = "1"
+
 // probabilities a thief gets at least noxious oil
 OUTER_SET zswo_thief_noxious_oil_assignment_chances = "25"
 

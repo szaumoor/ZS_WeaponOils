@@ -1,9 +1,8 @@
 BACKUP "weidu_external/backup/ZS_WeaponOils"
 SUPPORT "RoyalProtector at Gibberlings's forum https://www.gibberlings3.net/profile/12720-royalprotector/"
 VERSION "v1.4.4"
-README ~%MOD_FOLDER%/README.md~
+README ~../README.md~
 AUTO_EVAL_STRINGS
-
 LANGUAGE
 "English"
 "english"
@@ -23,7 +22,9 @@ END
 
 INCLUDE ~%MOD_FOLDER%/libs/fragments/zs_incl_oils.tph~ // inserting oils into the game files
 INCLUDE ~%MOD_FOLDER%/libs/fragments/zs_incl_oils_stores.tph~ // inserting oils into the stores
-INCLUDE ~%MOD_FOLDER%/libs/fragments/zs_incl_oils_cre.tph~ // inserting oils into the creatures' inventories
+INCLUDE ~%MOD_FOLDER%/libs/fragments/zs_incl_oils_cre_manual.tph~ // inserting oils into the creatures' inventories
+PRINT "Adding oils automatically"
+INCLUDE ~%MOD_FOLDER%/libs/fragments/zs_incl_oils_cre_auto.tph~
 
 ACTION_IF zswo_pod_patch AND MOD_IS_INSTALLED "zbpod.tp2" "0" BEGIN
     PRINT "Pits of Despair detected, adding oils to the store."
