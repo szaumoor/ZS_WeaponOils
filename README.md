@@ -1,12 +1,14 @@
-# ZS_WeaponOils
+# RoyalProtector's Weapon Oils
 
 This small mod simply adds a new class of items called "weapon oils". Essentially, they are consumable potions that apply a somewhat mild melee/ranged effect to your melee and ranged attacks for 1 turn. The poison-based ones do have the risk of self-poisoning, if dexterity is below 16. The effects all bypass magic resistance, except in the case of Arcane Oil (which is offset by the higher damage).
 
-They are distributed to stores so far and a few select creatures. Compatibility with IWDEE not established yet, because I can't be bothered to check what stores there are and how to decide which stores make the most sense to place the items in. Feel free to offer feedback on this.
+They are distributed to stores and a few select creatures. It is also randomly distributed to various non-joinable NPCs. For example, thieves have a chance of getting poisonous or acidic oils (double the amount if they're assassins), mage types get arcane oil sometimes, fighter classes can get gelid, igneous, or electric oils, and paladins and clerics can get noxious oil, sanctified and profane oil depending on their specific class and their alignment.
 
-Note that you cannot stack oils with themselves or each other, they are all set up so only one of them can be active. This of course can be abused with any other mods that may add similar items. If any of you can think of another mod that adds stuff like this, I can add some code to handle it so balance is not broken.
+Compatibility with IWDEE not established yet, because I can't be bothered to check what stores there are and how to decide which stores make the most sense to place the items in. Feel free to offer feedback on this.
 
-Also, I'm not a good writer, so the descriptions are pretty boring, and most of the icons were lazily made, but I think they're visually  distinguishable enough.
+Note that you cannot stack oils with themselves or each other, they are all set up so only one of them can be active. This of course can be abused with any other mods that may add similar items. If any of you can think of another mod that adds stuff like this, I can add some code to handle it, so balance is not broken.
+
+Also, I'm not a good writer, so the descriptions are pretty boring, and most of the icons were lazily made, but I think they're visually distinguishable enough.
 
 These are the available oils:
 
@@ -16,7 +18,7 @@ These are the available oils:
 - **Scintillating** Oil: 1d2+1 electric damage (Save vs. Breath for half)
 - **Arcane** Oil: 1d4+2 magic damage (no save allowed)
 - **Noxious** Oil: 1d2+1 poison damage (Save vs. Death at +2 or suffer 6 points of poison damage over 2 rounds)
-- **Drow** **Soporific** Oil: Save vs. Death or fall into a deep slumber for 1 turn (damage will awaken the target)
+- **Drow Soporific** Oil: Save vs. Death or fall into a deep slumber for 1 turn (damage will awaken the target)
 - **Sanctified** Oil: +4 irresistible damage against the undead, must Save vs. Death at +2 or become Slowed and Weakened for 10 seconds
 - **Profane** Oil: as sanctified oil, but only works vs. the living
 - **Kuo-Toan** Oil of **Stunning**: Save vs. Spell at +2 or become stunned for 2 rounds. Very limited in quantity.
