@@ -7,3 +7,4 @@
 - Mages, mage/thieves, fighter/thieves, sorcerers, and bards, have a chance of holding 1 arcane oil (25% default)
 - Fighter/Mage/Thieves no longer have a chance of getting noxious or drow oils
 - Patches also clerics and paladins so they get 1 sanctified or profane oil depending on alignment (20% chance). Neutral ones had a 50-50 chance of getting either (15% chance). Blackguards also have a 50% chance of spawning with 1 noxious oil in their inventory.
+- Joinable characters no longer are candidate for random placement of oils
