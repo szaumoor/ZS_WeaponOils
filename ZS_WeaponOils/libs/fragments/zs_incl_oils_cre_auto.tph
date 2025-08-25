@@ -48,6 +48,7 @@ ACTION_IF zswo_allow_random_redistribution_cre BEGIN
                             ADD_CRE_ITEM ~ZSWOPS02~ (1) (0) (0) ~none~ ~inv~ // drow soporific oil
                         END
                     END ELSE PATCH_IF chance <= zswo_thief_caustic_oil_assignment_chances BEGIN
+                        SET amount = RANDOM(1 3)
                         ADD_CRE_ITEM ~ZSWOAC01~ (amount) (0) (0) ~none~ ~inv~ // acid oil
                     END
                 END
