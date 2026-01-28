@@ -1,4 +1,6 @@
-# RoyalProtector's Weapon Oils
+# THIS MOD IS DEPRECATED AND NO LONGER MAINTAINED, SEE ZS_CONSUMABLES INSTEAD
+
+# Kaelyn's Weapon Oils
 
 This small mod simply adds a new class of items called "weapon oils". Essentially, they are consumable potions that apply a somewhat mild melee/ranged effect to your melee and ranged attacks for 1 turn. The poison-based ones do have the risk of self-poisoning, if dexterity is below 16. The effects all bypass magic resistance, except in the case of Arcane Oil (which is offset by the higher damage).
 
